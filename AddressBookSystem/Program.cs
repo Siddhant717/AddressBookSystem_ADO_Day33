@@ -2,11 +2,12 @@
 
 namespace AddressBookSystem
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            AddressBook.CreateAddressBookServiceDB();
+            AddressBook addressbook = new();
+            addressbook.CreateAddressBookTable();
         }
     }
 }
